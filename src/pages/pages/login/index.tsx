@@ -98,7 +98,7 @@ const LoginPage = () => {
 
   const submitForm = async () => {
     try {
-      let currentForm: any = { ...formState }
+      const currentForm: any = { ...formState }
       let error = false
 
       for (const [mainKey, mainValue] of Object.entries(formState)) {
