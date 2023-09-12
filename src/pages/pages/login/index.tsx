@@ -1,5 +1,5 @@
 // ** React Imports
-import { ChangeEvent, MouseEvent, ReactNode, useState, useEffect } from 'react'
+import { MouseEvent, ReactNode, useState, useEffect } from 'react'
 
 // ** Next Imports
 import Link from 'next/link'
@@ -89,7 +89,7 @@ const LoginPage = () => {
   }
 
   const handleForm = (key: string, value: string) => {
-    let currentState: any = { ...formState }
+    const currentState: any = { ...formState }
 
     currentState[key]['text'] = value
 
